@@ -1,0 +1,89 @@
+ {
+    "SellerId": "Robin_anmol",
+
+    "gender": "Boys",
+
+    "percent": 10,
+
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+
+    "season": "Summer",
+
+    "img": "https://i.imgur.com/h2sP3bN.jpg",
+
+    "Totalstock": 0,
+
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+
+    "name": "Kids's Shorts",
+
+    "sale": true,
+
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+
+
+    "MrpPrice": 8.99,
+
+    "imgs": [
+      "https://i.imgur.com/ETqGxMl.jpg",
+      "https://i.imgur.com/hGjBJNQ.jpg"
+    ],
+
+    "averageRating": 3,
+
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+
+    "costToProduce": 1.04,
+
+    "Totalsold": 0,
+
+    "date": " new Date()",
+
+    "BrandName": "Shopie"
+    
+  },
+
+
+  ///filtering using aggregate 
+    //Filter matching using colors
+  // const allProducts = await Product.aggregate([
+  //   {
+  //     $match: {
+  //       variant: {
+  //         $elemMatch: {
+  //           colors: {
+  //             $elemMatch: {
+  //               $or: [{ color: "black" }],
+  //             },
+  //           },
+  //         },
+  //       },
+  //     },
+  //   },
+  // ]);

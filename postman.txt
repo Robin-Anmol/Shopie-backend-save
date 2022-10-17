@@ -1,0 +1,75 @@
+ {
+    "sellerId": "Robin_anmol",
+
+    "gender": "Boys",
+
+    "saleDiscount": 10,
+
+    "productDetail": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+
+    "shortDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+
+
+
+    "mainImage":{
+        "public_id":"Robin_anmol",
+        "imageUrl":"https://i.imgur.com/h2sP3bN.jpg"
+    },
+
+    "images":{
+        "public_id":"Robin_anmol",
+        "imageUrl":"https://i.imgur.com/h2sP3bN.jpg"
+    },
+
+    "InStock": 10,
+
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+
+    "name": "Kids's Shorts",
+
+    "sale": true,
+
+
+
+
+
+    "MrpPrice": 8.99,
+
+  
+
+    "averageRating": 3,
+
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "couponcode": "coupon2", "discount": 20 }
+    ],
+
+    "costToProduce": 1.04,
+
+    "Totalsold": 0,
+
+    "date": " new Date()",
+
+    "BrandName": "Shopie"
+    
+  }
