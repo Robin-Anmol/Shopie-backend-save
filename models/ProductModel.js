@@ -9,7 +9,11 @@ const reviewSchema = new mongoose.Schema(
     },
     userName: { type: String, required: true },
     userRating: { type: Number, required: true },
-    userComment: { type: String, required: [true, "please write review"] },
+    userComment: {
+      type: String,
+      required: [true, "please write review"],
+      maxLength: [50, "comment could't be more than "],
+    },
     ratingImages: [
       {
         public_id: {
@@ -57,7 +61,6 @@ const couponCodeSchema = new mongoose.Schema({
   },
   discount: {
     type: Number,
-
     maxLength: [2, "Discount Cannot be exceed Mrp"],
   },
 });
@@ -71,6 +74,7 @@ const genderSchema = new mongoose.Schema(
   },
   { _id: false }
 );
+
 const categoriesSchema = new mongoose.Schema(
   {
     category: {
@@ -84,38 +88,42 @@ const categoriesSchema = new mongoose.Schema(
 const ProductSchema = new mongoose.Schema(
   {
     BrandName: {
+      //first page
       type: String,
       required: true,
     },
 
     genders: [genderSchema],
     categories: [categoriesSchema],
-
     name: {
+      //first page
       type: String,
       required: [true, "Enter product name"],
     },
-
     shortDescription: {
+      //first page
+
       type: String,
       required: [true, "Please Enter product description"],
       maxLength: [400, "Description cannot exceed 400 characters "],
     },
 
     productDetail: { type: [String], required: true },
-
+    //one more thing we need to add in it which is actual price  on which the
     MrpPrice: {
+      //first page
       type: Number,
       required: [true, "Please Enter product price"],
       maxLength: [8, "Price cannot exceed 8 characters "],
     },
     costToProduce: {
+      //first page
       type: Number,
       required: [true, "Please Enter product costToProduce"],
       maxLength: [8, "Price cannot exceed 8 characters "],
     },
-
     mainImage: {
+      //first pages
       public_id: {
         type: String,
         required: true,
@@ -149,6 +157,7 @@ const ProductSchema = new mongoose.Schema(
       default: 0,
       min: 0,
     },
+    //first page
     InStock: {
       type: Number,
       required: [true, "please Enter product Price "],
@@ -164,6 +173,7 @@ const ProductSchema = new mongoose.Schema(
     },
     reviews: [reviewSchema],
     variant: [sizeSchema],
+
     sales: {
       type: Boolean,
       required: true,

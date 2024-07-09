@@ -32,6 +32,10 @@ const UserSchema = new mongoose.Schema(
       validate: [Validator.isEmail, "Please Enter a valid Email"],
     },
 
+    //gender should be added in future
+
+    // phone no should also be tthere
+
     password: {
       type: String,
       required: [true, "Please Enter Your Password"],
